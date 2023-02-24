@@ -9,32 +9,29 @@
  *
  *****************************************************************************/
 /**
- * @file <Add File Name> 
- * @brief <Add Brief Description Here >
+ 
  *
- * <Add Extended Description Here>
+ * this code was made on purpose of the task given by the course introduction to embedded systems on week 1.
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Victor Kohl
+ * @date 2/24/2023
  *
  */
 #ifndef __STATS_H__
 #define __STATS_H__
 
-/* Add Your Declarations and Function Comments here */ 
 
-/**
- * @brief <Add Brief Description of Function Here>
- *
- * <Add Extended Description Here>
- *
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- * @param <Add InputName> <add description here>
- *
- * @return <Add Return Informaiton here>
- */
+/* Size of the Data Set */
+#define SIZE (40)
+char sorted[SIZE]; // array for sorting in the function sort_array and to be called in other functions
+
+void print_statistics(char array[SIZE]); //Prints The values of mean, maximum, minimum and median numbers of the original array.
+void print_array(char array[SIZE]); //Prints both original array and Sorted array
+int find_median(char array[SIZE]); //calculates the median of the array
+int find_mean(char array[SIZE]); //calculates the mean of the array
+int find_maximum(char array[SIZE]); //calculates the maximum number of the array
+int find_minimum(char array[SIZE]);//calculates the minimum number of the array
+void sort_array(char array[SIZE]);// sorts the original array from largest number to shortest
 
 
 #endif /* __STATS_H__ */
